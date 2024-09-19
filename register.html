@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Register</title>
+</head>
+<body style = "background-image: url(Tech.jpg);">
+    <div>
+<h1>Register for the TechFusion Conference</h1>
+</div>
+<div class="container">
+    <form class="info">
+        <label>Full Name:</label> 
+        <br>
+        <input type="text" required>
+        <br>
+        <label> Email Address: </label> 
+        <br>
+        <input type="email" required>
+        <br>
+        <label>Password:</label>
+        <br>
+        <input type="password" required minlength="8">
+        <br>
+        <label>Phone Number:</label>
+        <br>
+        <input type="tel">
+        <br>
+        <label>Gender:</label>
+        <br>
+        <input type = "radio"  name="gender"> <label> Male </label>
+        <input type = "radio"  name="gender"> <label> Female </label>
+        <input type = "radio"  name="gender"> <label> Other </label>
+        <br>
+        <label for="tics">Select your ticket type:</label>
+        <br>
+        <input list="ticks" name="tickType" id="selction" required> 
+            <datalist id="ticks">
+                <option value="Regular">
+                <option value="Student">
+                <option value="VIP">
+                </datalist>
+                <br>
+        <label for="term">I accept the term and conditions</label>
+        <input type="checkbox" id="term" name="terms" required>
+        <br>
+        <form action=http://127.0.0.1:3000/success.html >
+            <input type="submit" class="btn" value="Submit Regestration">
+            </form>
+    </form>
+</div>
+</body>
+</html>
